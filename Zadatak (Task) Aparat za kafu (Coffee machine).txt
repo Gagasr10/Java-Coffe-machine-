@@ -1,0 +1,150 @@
+Zadatak / Instructions
+
+Java OOP - Aparat za kafu
+Neophodno je napraviti program po kome će se praviti mašine za kafu.
+
+Mašina u sebi ima posudu za vodu, posudu za kafu i posudu za mleko.
+
+Mašina u sebi ima tri cevčice pomoću kojih dozira vodu, kafu i mleko i pomoću te tri cevčice pravi sve vrste kafa u ponudi.
+
+Svaka mašina za kafu u ponudi ima
+
+kratki espreso (jedno doziranje vode, jedno doziranje kafe)
+produženi espreso (dva doziranja vode, jedno doziranje kafe)
+kapućino (jedno doziranje vode, jedno doziranje kafe, jedno doziranje mleka)
+Cevčice se ne vide spolja, spolja se vide samo tri tastera, za kratki espreso, dugi espreso i kapućino.
+
+Zadatak:
+
+Implementirati klasu "CoffieMachine" koja treba da simulira rad mašine za kafu.
+
+Klasa treba da ima sledece ZAŠTIĆENE atribute:
+
+water - tipa int sa početnom vrednošću 400 i predstavlja stanje popunjenosti posude sa vodom
+coffie - tipa int sa početnom vrednošću 200 i predstavlja stanje popunjenosti posude sa kafom
+milk - tipa int sa početnom vrednošću 100 i predstavlja stanje popunjenosti posude sa mlekom
+Klasa treba da ima sledece ZAŠTIĆENE metode:
+
+pourWater()
+
+    - funkcijom se vrsi doziranje vode.
+
+    - funkcija treba da ispiše poruku u konzoli "Pouring water" 
+
+    - doziranje vode uvek smanjuje stanje vode za 20.
+
+    - ukoliko nema više vode funkcija treba da ispiše poruku "Machine is out of water".
+
+pourCoffie()
+
+    - funkcijom se vrši doziranje kafe.
+
+    - funkcija treba da ispiše poruku u konzoli "Pouring coffie" 
+
+    - doziranje kafe uvek smanjuje stanje kafe za 10.
+
+    - ukoliko nema više kafe funkcija treba da ispiše poruku "Machine is out of coffie"
+
+pourMilk()
+
+    - funkcijom se vrši doziranje mleka.
+
+    - funkcija treba da ispiše poruku "Pouring milk" 
+
+    - doziranje mleka uvek smanjuje stanje mleka za 20.
+
+    - ukoliko nema više kafe funkcija treba da ispiše poruku "Machine is out of milk"
+
+ 
+
+Klasa treba da ima sledeće JAVNE metode:
+
+getShortEsspresso()
+
+    - funkcija ne vraća nista
+
+    - funkcija treba da ispiše "Making short esspreso" na početku 
+
+    - zatim treba da izvrši JEDNO punjenje vode i JEDNO punjenje kafom
+
+    - nakon toga treba da ispiše poruku "Finished"
+
+getLongEsspresso()
+
+    - funkcija ne vraća nista.
+
+    - funkcija treba da ispiše "Making long esspreso" na početku
+
+    - zatim treba da izvrši DVA punjenja vodom i JEDNO punjenje kafom.
+
+    - nakon toga treba da ispiše poruku "Finished" 
+
+getCappuccino()
+
+    - funkcija ne vraća nista.
+
+    - funkcija treba da ispiše "Making capuccino" na početku 
+
+    - zatim treba da izvrši JEDNO punjenje vodom, JEDNO punjenje kafom i JEDNO punjenje mlekom
+
+    - nakon toga treba da ispiše poruku "Finished" 
+
+displayState()
+
+    - koja ne vraca nista
+
+    - funkcija ispisuje sledeće poruke "State: water - 800, coffie - 170, milk - 60", naravno ovo je samo primer poruke, brojke trebate da zamenite sa vrednostima koje su u tom trenutku upisane u atribituma klase
+
+ 
+
+Ko misli da moze neka implementira i sledeće:
+
+    - funkcionalnost za punjenje kredita.
+
+    - početni iznos kredita je nula i kredit se puni pomoću funkcije addCredit
+
+    - kratki espreso košta 30 kredita, produženi 40 a kapućino 50.
+
+    - ukoliko nema kredita za željeni proizvod treba da se ispiše poruka "Not enough credit"
+
+ 
+
+Nakon kreiranja klase neophodno je da napravite objekat coffieMachine i da izvršite sledeći test:
+
+ 
+
+1) narucivanje dugog espresa
+
+2) ispisivanje stanja masine
+
+3) narucivanje kratkog espresa
+
+4) ispisivanje stanja masine
+
+5) narucivanje dugog espresa
+
+6) ispisivanje stanja masine
+
+7) narucivanje dugog espresa
+
+8) ispisivanje stanja masine
+
+9) narucivanje kratkog espresa
+
+10) ispisivanje stanja masine
+
+11) narucivanje kapucina
+
+12) ispisivanje stanja masine
+
+13) narucivanje dugog espresa
+
+14) ispisivanje stanja masine
+
+15) narucivanje kratkog espresa
+
+16) ispisivanje stanja masine
+
+17) narucivanje kapucina
+
+18) ispisivanje stanja masine
