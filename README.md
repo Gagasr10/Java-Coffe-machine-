@@ -3,7 +3,7 @@ We have created a program for a coffee machine.
 The machine has several drinks:
 
 Short expresso
-Extended ekrpeso
+Extended expresso
 Cappuccino
 
 The device has a container for water, a container for coffee, and a container for milk.
